@@ -1,0 +1,65 @@
+body {
+  background-color: rgb(22, 20, 20);
+}
+
+.artist--name {
+  color: #b3b3b3;
+  font-size: 0.8rem;
+  text-decoration: none;
+  margin: 0;
+  margin-top: 1px;
+}
+
+.artist--name:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.album--title {
+  color: #b3b3b3;
+  text-decoration: none;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.album--title:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.album--item--wrapper {
+  padding: 20px;
+  cursor: pointer;
+  background-color: rgb(56, 45, 45);
+}
+
+.album--img--div {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.play--item {
+  display: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #1db954;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+  box-shadow: 0px 0px 8px 8px rgb(37, 37, 37);
+  cursor: default;
+}
+
+.album--item--wrapper:hover .play--item {
+  transform: scale(1.05);
+  display: flex;
+}

@@ -12,8 +12,8 @@ body {
   padding: 0;
   margin: 0;
   color: #fff;
-  background: rgb(35, 32, 107);
-
+  background-color: rgb(21, 23, 23);
+  background: linear-gradient(to right, #383c44, #322236);
   font-family: "Circular", sans-serif;
 }
 
@@ -393,11 +393,7 @@ main {
   overflow-y: scroll;
   overflow-x: scroll;
   height: 90%;
-}
-
-main p {
-  font-size: 0.8rem;
-  text-align: center;
+  margin: 0;
 }
 
 main img {
@@ -419,10 +415,6 @@ html {
 
 .container-div {
   padding-top: 30px;
-}
-
-#carouselExampleSlidesOnly {
-  background: rgb(35, 32, 107);
 }
 
 .selected {
@@ -657,18 +649,9 @@ html {
     justify-content: center;
   }
 
-  main img {
-    width: 70vw;
-    margin-top: 10px;
-  }
-
   .container-div {
     margin: 10px auto;
     padding: 10px 10px 35px 5px;
-  }
-
-  #carouselExampleSlidesOnly {
-    padding-bottom: 10px;
   }
 
   .content-nav ul {
@@ -761,4 +744,87 @@ html {
 .navbar--link--toggle--rotate {
   transform: rotate(-180deg);
   transition: all ease 0.5s;
+}
+
+audio {
+  width: 100%;
+}
+
+body {
+  background-color: rgb(22, 20, 20);
+}
+
+.song--title {
+  color: #b3b3b3;
+  font-size: 0.8rem;
+  margin: 0;
+  margin-top: 1px;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.artist--name {
+  color: #b3b3b3;
+  font-size: 0.8rem;
+  text-decoration: none;
+  margin: 0;
+  margin-top: 1px;
+  text-align: left;
+}
+
+.artist--name:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.album--title {
+  text-align: left;
+  color: #b3b3b3;
+  text-decoration: none;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.album--title:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.album--item--wrapper {
+  padding: 10px;
+  text-align: left;
+  background-color: rgb(56, 45, 45);
+}
+
+.album--img--div {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.play--item {
+  display: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #1db954;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+  box-shadow: 0px 0px 8px 8px rgb(37, 37, 37);
+  cursor: default;
+}
+
+.album--item--wrapper:hover .play--item {
+  transform: scale(1.05);
+  display: flex;
 }
